@@ -1,0 +1,6 @@
+<article *ngFor="let post of posts">
+  <h2>
+    {{post.title.rendered}}
+  </h2>
+  <a [routerLink]="['./', post.slug]">read more</a>
+</article>

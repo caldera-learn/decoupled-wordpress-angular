@@ -1,0 +1,25 @@
+import { Component, OnInit } from '@angular/core';
+import { WPApiService } from '../../services/wp-api.service';
+
+import { PostObject } from './../../post-object';
+
+@Component({
+  selector: 'app-posts',
+  templateUrl: './posts-list.component.html',
+  styleUrls: ['./posts-list.component.css']
+})
+export class PostsListComponent implements OnInit {
+
+  constructor( private api: WPApiService ) { }
+
+  posts : PostObject[];
+
+  ngOnInit() {
+    this.api
+        .getPosts()
+        .subscribe(res => {
+          this.posts = res;
+        })
+  }
+
+}
