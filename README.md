@@ -2,6 +2,9 @@
 
 This was built using `angular-cli` which is __amazing__.
 
+## DEMO
+[DEMO Site running CalderaWP blog](https://caldera-learn.github.io/decoupled-wordpress-angular/)
+
 ## Setup
 To connect to your WordPress environment rename `src/app/config/app-config.ts.sample` to `src/app/config/app-config.ts` and change the `API_ENDPOINT` to match your domain.  
 the API_ENDPOINT must include `/wp-json/` for example `http://local.wordpress.dev/wp-json/`  
