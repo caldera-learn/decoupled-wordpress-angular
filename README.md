@@ -3,7 +3,7 @@
 This was built using `angular-cli` which is __amazing__.
 
 ## Setup
-To connect to your WordPress environment go to `src/app/config/app-config.ts` and change the `API_ENDPOINT` to match your domain.  
+To connect to your WordPress environment rename `src/app/config/app-config.ts.sample` to `src/app/config/app-config.ts` and change the `API_ENDPOINT` to match your domain.  
 the API_ENDPOINT must include `/wp-json/` for example `http://local.wordpress.dev/wp-json/`  
 
 ## Development server
