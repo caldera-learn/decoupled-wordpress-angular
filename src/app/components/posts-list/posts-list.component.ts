@@ -6,7 +6,7 @@ import { PostObject } from './../../post-object';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts-list.component.html',
-  styleUrls: ['./posts-list.component.css']
+  styleUrls: ['./posts-list.component.scss']
 })
 export class PostsListComponent implements OnInit {
 

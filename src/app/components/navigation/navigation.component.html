@@ -4,7 +4,7 @@
 		<li *ngFor="let post of posts | slice:0:5; let i=index">
 		  <div *ngIf="i<5">
 	        <a [routerLink]="['./', post.slug]">
-	          {{post.title.rendered}}
+	          latest post {{i+1}}
 	        </a>
 	      </div>
 		</li>

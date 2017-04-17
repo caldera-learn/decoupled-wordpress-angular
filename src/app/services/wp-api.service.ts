@@ -31,6 +31,12 @@ export class WPApiService {
 			.map((res: Response) => res.json());
 	}
 
+	// Caldera Forms Specific
+	getProducts() : Observable<PostObject[]> {
+		return this.http
+			.get( this.api_url + 'calderawp_api/v2/products')
+			.map((res: Response) => res.json());
+	}
 
 	getSingle(slug) {
 

@@ -15,11 +15,11 @@ export class NavigationComponent implements OnInit {
   posts : PostObject[];
 
   ngOnInit() {
-    this.api
-        .getPages()
-        .subscribe(res => {
-          this.posts = res;
-        })
+      this.api
+          .getPosts()
+          .subscribe(res => {
+              this.posts = res;
+          })
   }
 
 }
