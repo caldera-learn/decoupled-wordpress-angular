@@ -1,11 +1,17 @@
-<h1 *ngIf="site_data">
-  <a [routerLink]="['/']">{{ site_data.name }}</a>
-</h1>
+<header class="container-fluid">
+  <div class="container">
+    <div class="row" *ngIf="site_data">
+      <div class="col-sm-12 logo">
+        <a [routerLink]="['/']">{{ site_data.name }}</a>
+        <p class="site-description">
+          {{ site_data.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<app-navigation></app-navigation>
 
-<div *ngIf="site_data">
-  <p>
-    {{ site_data.description }}
-  </p>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>

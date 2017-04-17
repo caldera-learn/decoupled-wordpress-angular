@@ -1,0 +1,13 @@
+<nav class="container-fluid" *ngIf="posts" id="navigation-main" role="navigation">
+	<div class="container">
+	  <ul>
+		<li *ngFor="let post of posts | slice:0:5; let i=index">
+		  <div *ngIf="i<5">
+	        <a [routerLink]="['./', post.slug]">
+	          {{post.title.rendered}}
+	        </a>
+	      </div>
+		</li>
+	  </ul>
+	</div>
+</nav>

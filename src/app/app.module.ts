@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { WPApiService } from './services/wp-api.service';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { PostsSingleComponent } from './components/posts-single/posts-single.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 const appRoutes: Routes = [
   {
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PostsListComponent,
-    PostsSingleComponent
+    PostsSingleComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

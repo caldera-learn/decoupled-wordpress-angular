@@ -1,0 +1,25 @@
+@import './assets/bootstrap';
+
+
+header {
+    background-image: url( https://d1dy2qw4671tuy.cloudfront.net/images/lake.jpg );
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid $brand-primary;
+    height: 90vh;
+
+    .logo {
+        height: 20vh;
+        padding-top: 70vh;
+        a {
+            color: white;
+            font-size: 3em;
+        }
+        p.site-description {
+            color: white;
+            font-size: 1.25em;
+            font-style: italic;
+        }
+    }
+}

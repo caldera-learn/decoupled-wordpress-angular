@@ -1,0 +1,33 @@
+@import './../../../assets/bootstrap-variables';
+
+nav#navigation-main {
+    background: lighten( $gray-base, 10% );
+    padding-bottom: 10px;
+    padding-top: 10px;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            a {
+                color: white;
+                cursor: pointer;
+                display: block;
+                font-size: 1.25em;
+                padding: 10px 15px;
+                text-transform: uppercase;
+            }
+            &:first-child {
+                a {
+                    padding-left: 0;
+                }
+            }
+            &:last-child {
+                a {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
