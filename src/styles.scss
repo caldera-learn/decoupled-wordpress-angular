@@ -6,7 +6,6 @@ header {
     background-position: 50% 75%;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 5px solid $brand-primary;
     height: 90vh;
 
     .logo {
@@ -15,6 +14,12 @@ header {
         a {
             color: white;
             font-size: 3em;
+            img {
+                display: inline-block;
+                height: 40px;
+                margin: 0 10px 0 0;
+                vertical-align: middle;
+            }
         }
         p.site-description {
             color: white;

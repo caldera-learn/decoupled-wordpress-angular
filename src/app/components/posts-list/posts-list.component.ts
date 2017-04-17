@@ -16,7 +16,7 @@ export class PostsListComponent implements OnInit {
 
   ngOnInit() {
     this.api
-        .getPosts()
+        .getPosts( 'download' )
         .subscribe(res => {
           this.posts = res;
         })

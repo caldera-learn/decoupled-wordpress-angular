@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row" *ngIf="site_data">
       <div class="col-sm-12 logo">
-        <a [routerLink]="['/']">{{ site_data.name }}</a>
+        <a [routerLink]="['/']"><img src="https://learn.calderalabs.org/wp-content/themes/caldera-learn/img/logo.png" alt="Caldera Learn" />{{ site_data.name }}</a>
         <p class="site-description">
           {{ site_data.description }}
         </p>

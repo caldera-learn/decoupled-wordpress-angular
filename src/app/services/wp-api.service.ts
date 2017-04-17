@@ -19,9 +19,9 @@ export class WPApiService {
 		this.api_url = AppConfig.API_ENDPOINT;
 	}
 
-	getPosts() : Observable<PostObject[]> {
+	getPosts(cpt) : Observable<PostObject[]> {
 		return this.http
-			.get( this.api_url + 'wp/v2/posts')
+			.get( this.api_url + 'wp/v2/' + cpt )
 			.map((res: Response) => res.json());
 	}
 
@@ -62,6 +62,12 @@ export class WPApiService {
 	getSinglePage(slug) {
 		return this.http.get( this.api_url + 'wp/v2/pages/' + `?slug=${slug}`)
 			.toPromise();
+	}
+
+	getMenu( menu ) : Observable<PostObject[]> {
+		return this.http
+			.get( this.api_url + 'wp-api-menus/v2/menus/' + menu )
+			.map( (res: Response) => res.json() );
 	}
 
 

@@ -16,7 +16,7 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
       this.api
-          .getPosts()
+          .getMenu('14')
           .subscribe(res => {
               this.posts = res;
           })
